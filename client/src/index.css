@@ -1,0 +1,61 @@
+.hover-btn{
+    color: #fff;
+}
+
+.hover-btn:hover{
+ background-color: #93120e;
+ color: #fff
+};
+
+
+/* ToggleButton.css */
+.btn-toggle {
+    position: relative;
+    width: 10px;
+    height: 34px;
+    border: none;
+  }
+  
+  .btn-toggle:before {
+    content: 'OFF';
+    position: absolute;
+    left: 6px;
+    top: 7px;
+    width: 26px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .btn-toggle:after {
+    content: 'ON';
+    position: absolute;
+    right: 6px;
+    top: 7px;
+    width: 16px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .btn-success.btn-toggle:before {
+    left: 28px;
+    background-color: #ccc;
+  }
+  
+  .btn-success.btn-toggle:after {
+    right: 6px;
+    background-color: #28a745;
+  }
+  
+  .btn-secondary.btn-toggle:before {
+    left: 6px;
+    background-color: #28a745;
+  }
+  
+  .btn-secondary.btn-toggle:after {
+    right: 28px;
+    background-color: #dc3545;
+  }

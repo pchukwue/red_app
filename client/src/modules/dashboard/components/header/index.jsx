@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from "../../../../assets/media/logos/custom-1.png";
+import logo from "../../../../assets/media/logos/redbillerLogo.jpg";  //client/src/assets/media/logos/
 import Navbar from './navbar';
 export default function Header() {
 	return (
@@ -16,12 +16,12 @@ export default function Header() {
 						</div>
 
 						<a href="index.html" className="me-5 me-lg-9">
-							<img alt="Logo" src={logo} className="h-25px h-sm-30px" />
+							<img alt="Logo" src={logo} className="h-75px h-sm-70px" />
 						</a>
 
 						<div className="d-none d-md-inline">
-							<div className="fw-bold fs-3 text-gray-900">Good morning, James</div>
-							<div className="fw-semibold text-gray-500">Plan your blog post by choosing a topic</div>
+							<div className="fw-bold fs-3 text-gray-900">Good morning, Akinkumi</div>
+							<div className="fw-semibold text-gray-500">Welcome to Redbiller</div>
 						</div>
 
 					</div>
@@ -235,7 +235,7 @@ export default function Header() {
 							<a href="#" className="d-flex align-items-center" data-kt-menu-trigger="{default: 'click', lg: 'hover'}" data-kt-menu-attach="parent" data-kt-menu-placement="bottom-end">
 								<button className="btn btn-icon btn-body position-relative btn btn-icon btn-icon-gray-600 border border-dashed border-gray-300 w-35px h-35px w-md-40px h-md-40px" id="kt_drawer_chat_toggle">
 									<i className="ki-outline ki-messages fs-3"></i>
-									<span className="position-absolute top-0 start-100 translate-middle badge badge-circle badge-sm badge-info">5</span>
+									<span className="position-absolute top-0 start-100 translate-middle badge badge-circle badge-sm badge-info" style={{backgroundColor:"#93120e"}}>5</span>
 								</button>
 							</a>
 						</div>
