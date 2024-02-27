@@ -20,7 +20,7 @@ export default function Header() {
 						</a>
 
 						<div className="d-none d-md-inline">
-							<div className="fw-bold fs-3 text-gray-900">Good morning, Akinkumi</div>
+							<div className="fw-bold fs-3 text-gray-900">Akinkumi</div>
 							<div className="fw-semibold text-gray-500">Welcome to Redbiller</div>
 						</div>
 

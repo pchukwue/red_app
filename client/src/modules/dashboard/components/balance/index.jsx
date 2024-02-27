@@ -1,8 +1,11 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import Button from 'react-bootstrap/Button';
 
 const Balance = () => {
     const [isOn, setIsOn] = useState(false);
-    const [balance, setBalance] = useState("30,274.94")
+    const [balance, setBalance] = useState("30,274.94");
+    const [disputeBalance, setDisputeBalance] = useState("10,274.94")
+    const [currentBalance, setCurrentBalance] = useState("40,274.94")
 
     const handleToggleBtn = () => {
         setIsOn(!isOn)
@@ -40,6 +43,7 @@ const Balance = () => {
                         type='button'
                         className={`btn btn-lg ${isOn ? 'btn-success' : 'btn-secondary'}`}
                         onClick={handleToggleBtn}
+                        style={{ backgroundColor: "#93120e" }}
                     >
                         {isOn ? 'Hide Balance' : 'Show Balance'}
                         {/* <i className="ki-outline ki-dots-square fs-1 text-gray-500 me-n1"></i> */}
@@ -53,21 +57,25 @@ const Balance = () => {
 
             <div className="card-body py-0 px-0">
 
-                <ul className="nav d-flex justify-content-between mb-3 mx-9 flex-column">
+                <ul className="nav d-flex justify-content-between mb-3 mx-9 flex-column px-3">
+
 
 
                     <li className="nav-item mb-3 d-flex flex-column">
 
                         <a className="nav-link btn btn-flex flex-center btn-active-danger btn-color-gray-600 btn-active-color-white rounded-2 w-45px h-35px"
-                            data-bs-toggle="tab" id="kt_charts_widget_33_tab_1" href="#kt_charts_widget_33_tab_content_1">N40,274.94</a>
-                        <span className="fw-semibold fs-8 lh-1" style={{ color: "gray" }}>Current balance</span>
+                            data-bs-toggle="tab" id="kt_charts_widget_33_tab_1" href="#kt_charts_widget_33_tab_content_1"
+                            style={{ color: "red" }}
+                        >{isOn ? disputeBalance : "******"}</a>
+                        <span className="fw-semibold fs-8 lh-1" style={{ color: "gray" }}>Dispute balance</span>
 
                     </li>
+                    <hr />
                     <li className="nav-item mb-3 d-flex flex-column">
 
                         <a className="nav-link btn btn-flex flex-center btn-active-danger btn-color-gray-600 btn-active-color-white rounded-2 w-45px h-35px"
-                            data-bs-toggle="tab" id="kt_charts_widget_33_tab_1" href="#kt_charts_widget_33_tab_content_1">N10,000</a>
-                        <span className="fw-semibold fs-8 lh-1" style={{ color: "gray" }}>Dispute balance</span>
+                            data-bs-toggle="tab" id="kt_charts_widget_33_tab_1" href="#kt_charts_widget_33_tab_content_1">{isOn ? currentBalance : "******"}</a>
+                        <span className="fw-semibold fs-8 lh-1" style={{ color: "gray" }}>Current balance</span>
 
                     </li>
 
@@ -77,8 +85,18 @@ const Balance = () => {
             </div>
 
 
-            <div className="card-body py-0 px-0">
-                {/* <button>g</button> */}
+            <div className="card-body d-flex" style={{
+                color: "#93120e",
+                display:"flex",
+                border: "1px solid #f2f3f4",
+                borderRadius: '.3rem',
+                margin:".3rem",
+                alignItems:"center",
+                gap:".5rem"
+            }}>
+                <Button variant="outline" style={{ width: "10rem", height: "3rem" }}>Add Money</Button>
+                <Button variant="outline" style={{ width: "13rem", height: "3rem" }}>Withdraw Money</Button>
+                <i class="bi bi-gear fs-2x p-0"></i>
             </div>
 
         </div>

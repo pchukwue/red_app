@@ -14,6 +14,7 @@
     width: 10px;
     height: 34px;
     border: none;
+    color: #fff;
   }
   
   .btn-toggle:before {
@@ -23,6 +24,7 @@
     top: 7px;
     width: 26px;
     height: 20px;
+    color: #fff;
     background-color: #ccc;
     border-radius: 10px;
     transition: all 0.3s ease-in-out;
@@ -38,24 +40,29 @@
     background-color: #ccc;
     border-radius: 10px;
     transition: all 0.3s ease-in-out;
+    color: #fff;
   }
   
   .btn-success.btn-toggle:before {
     left: 28px;
     background-color: #ccc;
+    color: #fff;
   }
   
   .btn-success.btn-toggle:after {
     right: 6px;
     background-color: #28a745;
+    color: #fff;
   }
   
   .btn-secondary.btn-toggle:before {
     left: 6px;
     background-color: #28a745;
+    color: #fff;
   }
   
   .btn-secondary.btn-toggle:after {
     right: 28px;
     background-color: #dc3545;
+    color: #fff;
   }
