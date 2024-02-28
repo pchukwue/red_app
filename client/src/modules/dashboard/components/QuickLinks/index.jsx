@@ -100,7 +100,7 @@ const QuickLinks = () => {
                     <a className="nav-link btn hover-btn btn-center bg-gray-100 btn-color-gray-600 rounded-3 flex-column overflow-hidden w-90px h-85px pt-7 pt-lg-5 pb-2" data-bs-toggle="tab" href="#">
 
                         <div className="nav-icon mb-3">
-                            <i className="ki-outline ki-bitcoin fs-2x p-0"></i>
+                            <i className="bi bi-lightbulb-fill fs-2x p-0"></i>
                         </div>
 
 
@@ -116,7 +116,7 @@ const QuickLinks = () => {
                     <a className="nav-link btn hover-btn btn-center bg-gray-100 btn-color-gray-600 rounded-3 flex-column overflow-hidden w-90px h-85px pt-7 pt-lg-5 pb-2" data-bs-toggle="tab" href="#">
 
                         <div className="nav-icon mb-3">
-                            <i className="ki-outline ki-people fs-2x p-0"></i>
+                            <i className="bi bi-router-fill fs-2x p-0"></i>
                         </div>
 
 
@@ -132,11 +132,11 @@ const QuickLinks = () => {
                     <a className="nav-link btn hover-btn btn-center bg-gray-100 btn-color-gray-600 rounded-3 flex-column overflow-hidden w-90px h-85px pt-7 pt-lg-5 pb-2" data-bs-toggle="tab" href="#">
 
                         <div className="nav-icon mb-3">
-                            <i className="ki-outline ki-design fs-2x p-0"></i>
+                            <i className="bi bi-airplane fs-2x p-0"></i>
                         </div>
 
 
-                        <span className="fw-semibold fs-7 lh-1">Design</span>
+                        <span className="fw-semibold fs-7 lh-1">Travel</span>
 
                     </a>
 
@@ -148,11 +148,12 @@ const QuickLinks = () => {
                     <a className="nav-link btn hover-btn btn-center bg-gray-100 btn-color-gray-600 rounded-3 flex-column overflow-hidden w-90px h-85px pt-7 pt-lg-5 pb-2" data-bs-toggle="tab" href="#">
 
                         <div className="nav-icon mb-3">
-                            <i className="ki-outline ki-data fs-2x p-0"></i>
+                            <i className="bi bi-cart-check fs-2x p-0"></i>
+                            {/* <i class="bi bi-cart-check"></i> */}
                         </div>
 
 
-                        <span className="fw-semibold fs-7 lh-1">Data</span>
+                        <span className="fw-semibold fs-7 lh-1">POS</span>
 
                     </a>
 

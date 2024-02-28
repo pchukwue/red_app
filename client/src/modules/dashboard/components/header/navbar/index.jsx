@@ -1496,7 +1496,7 @@ const Navbar = () => {
                   <div data-kt-menu-trigger="{default: 'click', lg: 'hover'}" data-kt-menu-placement="bottom-start" data-kt-menu-offset="12,0" className="menu-item menu-lg-down-accordion menu-sub-lg-down-indention me-0 me-lg-2">
 
                       <span className="menu-link">
-                          <span className="menu-title">Colleections</span>
+                          <span className="menu-title">Collections</span>
                           <span className="menu-arrow d-lg-none"></span>
                       </span>
 

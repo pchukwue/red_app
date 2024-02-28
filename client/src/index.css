@@ -66,3 +66,24 @@
     background-color: #dc3545;
     color: #fff;
   }
+
+  .signin-btn{
+    background-color: #93120e;
+  }
+
+  .signin-btn :hover{
+     background-color: #fff;
+     color: #93120e;
+  }
+
+  a{
+    color: #93120e;
+  }
+
+  .linkss{
+    color: "#93120e";
+  }
+
+  .linkss:active{
+    color: "#93120e";
+  }

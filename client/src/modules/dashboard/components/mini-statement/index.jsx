@@ -82,7 +82,7 @@ const MiniStatement = () => {
                                 <th className="p-0 pb-3 min-w-100px text-start">SERVICE</th>
                                 <th className="p-0 pb-3 min-w-100px text-end">AMOUNT</th>
                                 <th className="p-0 pb-3 min-w-125px text-end">BALANCE</th>
-                                <th className="p-0 pb-3 min-w-100px text-end">No.</th>
+                                {/* <th className="p-0 pb-3 min-w-100px text-end">No.</th> */}
                                 <th className="p-0 pb-3 w-80px text-end">REFERENCE</th>
                             </tr>
                         </thead>
@@ -101,7 +101,7 @@ const MiniStatement = () => {
                                         <td className="text-end pe-0">
                                             <div className="d-flex align-items-center">
                                                 <span className="text-gray-600 fw-bold fs-6">{view.service.value}</span>
-                                                <span className="text-gray-600 fw-bold fs-6">{view.service.icon}</span>
+                                                <span className="text-gray-600 fw-bold fs-6 mx-6">{view.service.icon}</span>
                                             </div>
                                         </td>
                                         <td className="text-end pe-0">
@@ -113,9 +113,9 @@ const MiniStatement = () => {
                                                 <span className="text-gray-600 fw-bold d-block fs-6">{view.balance}</span>
                                             </div>
                                         </td>
-                                        <td className="text-end pe-0">
+                                        {/* <td className="text-end pe-0">
                                             <span className="text-gray-600 fw-bold fs-6">{view.sn}</span>
-                                        </td>
+                                        </td> */}
                                         <td className="text-end">
                                             <a href="#" className="btn btn-sm btn-icon btn-bg-light btn-active-color-primary w-30px h-30px">
                                                 <i class="bi bi-copy"></i>

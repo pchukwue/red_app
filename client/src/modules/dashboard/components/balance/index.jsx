@@ -4,8 +4,8 @@ import Button from 'react-bootstrap/Button';
 const Balance = () => {
     const [isOn, setIsOn] = useState(false);
     const [balance, setBalance] = useState("30,274.94");
-    const [disputeBalance, setDisputeBalance] = useState("10,274.94")
-    const [currentBalance, setCurrentBalance] = useState("40,274.94")
+    const [disputeBalance, setDisputeBalance] = useState("N10,274.94")
+    const [currentBalance, setCurrentBalance] = useState("N40,274.94")
 
     const handleToggleBtn = () => {
         setIsOn(!isOn)
@@ -94,8 +94,8 @@ const Balance = () => {
                 alignItems:"center",
                 gap:".5rem"
             }}>
-                <Button variant="outline" style={{ width: "10rem", height: "3rem" }}>Add Money</Button>
-                <Button variant="outline" style={{ width: "13rem", height: "3rem" }}>Withdraw Money</Button>
+                <Button variant="outline">Add Money</Button>
+                <Button variant="outline">Withdraw Money</Button>
                 <i class="bi bi-gear fs-2x p-0"></i>
             </div>
 
